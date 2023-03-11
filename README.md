@@ -1,4 +1,4 @@
-# Self-Signed-Certificates
+# Self-Signed-Certificates + RootCA
 Shell script to generate RootCA and self-signed certificates with OpenSSL.
 
 **Provide executable permission to the script**
