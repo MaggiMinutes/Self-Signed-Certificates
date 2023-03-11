@@ -1,5 +1,5 @@
 # Self-Signed-Certificates + RootCA
-Shell script to generate RootCA and self-signed certificates with OpenSSL.
+Shell script to generate RootCA and self-signed certificates using OpenSSL.
 
 **Create separate folder for all certificates**
 
