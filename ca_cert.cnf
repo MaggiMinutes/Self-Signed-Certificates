@@ -8,7 +8,7 @@ countryName             = IN
 stateOrProvinceName     = Maharashtra
 localityName            = Pune
 organizationName        = DotandDash Technologies Pvt. Ltd.
-commonName              = *.dotanddash.in
+commonName              = dotanddash.in
 
 [ v3_ca ]
 basicConstraints=critical,CA:TRUE
