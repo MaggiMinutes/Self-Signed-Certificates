@@ -15,4 +15,4 @@ Shell script to generate RootCA and self-signed certificates with OpenSSL.
 
 **Provide executable permission to the script**
 
-<code># chmod u+x gen_certificates.sh</code>
+    chmod u+x gen_certificates.sh
