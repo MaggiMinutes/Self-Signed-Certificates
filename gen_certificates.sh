@@ -9,7 +9,7 @@ CA_CRT="$PATH/cacert.pem"
 CA_EXTFILE="$PATH/ca_cert.cnf"
 SERVER_EXT="$PATH/server_ext.cnf"
 SERVER_CONF="$PATH/server_cert.cnf"
-OPENSSL_CMD="openssl"
+OPENSSL_CMD="/usr/bin/openssl"
 COMMON_NAME="$1"
 
 function generate_root_ca {
@@ -46,7 +46,7 @@ function generate_server_certificate {
     [[ $? -ne 0 ]] && echo "ERROR: Failed to generate $SERVER_CSR" && exit 1
 
     echo "Generating RootCA signed server certificate"
-    $OPENSSL_CMD x509 -req -in $SERVER_CSR -CA $CA_CRT -CAkey $CA_KEY -out $SERVER_CRT -CAcreateserial -days 365 -sha512 -extfile $SERVER_EXT 2>/dev/null
+    $OPENSSL_CMD x509 -req -in $SERVER_CSR -CA $CA_CRT -CAkey $CA_KEY -out $SERVER_CRT -CAcreateserial -days 3650 -sha512 -extfile $SERVER_EXT 2>/dev/null
     [[ $? -ne 0 ]] && echo "ERROR: Failed to generate $SERVER_CRT" && exit 1
 
     echo "Verifying the server certificate against RootCA"
