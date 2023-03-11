@@ -1,0 +1,10 @@
+default_bit = 4096
+distinguished_name = req_distinguished_name
+prompt = no
+
+[req_distinguished_name]
+countryName             = IN
+stateOrProvinceName     = Maharashtra
+localityName            = Pune
+organizationName        = DotandDash technologies Pvt. Ltd.
+commonName              = *.maggiminutes.com
