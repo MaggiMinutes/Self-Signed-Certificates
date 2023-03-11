@@ -1,5 +1,5 @@
 # Self-Signed-Certificates
-We will write a script to create self-signed certificates with OpenSSL.
+Shell script to generate RootCA and self-signed certificates with OpenSSL.
 
 Steps involved to generate RootCA and server certificate:
 
